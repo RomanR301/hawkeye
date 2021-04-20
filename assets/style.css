@@ -452,16 +452,28 @@ strong {
   .btn {
     width: 320px;
   }
-  .subscribe {
-    display: none;
-  }
-  .page-wrapper {
-    padding-bottom: 0;
-  }
   .main-content {
     width: 100%;
   }
   .main-content h1 {
     font-size: 35px;
+  }
+  .subscribe {
+    width: 96%;
+  }
+  .subscribe h2 {
+    font-size: 26px;
+  }
+  .subscribe .form-group {
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-wrapper {
+    padding-bottom: 0;
+  }
+  .subscribe {
+    display: none;
   }
 }
