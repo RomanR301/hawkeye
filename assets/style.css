@@ -198,7 +198,10 @@ strong {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-bottom: 50px;
+  padding: 30px 0;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
 }
 .page-wrapper:before, .page-wrapper:after {
   position: absolute;
@@ -215,7 +218,7 @@ strong {
 
 .header-top {
   background: #00A9DD;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,7 +232,7 @@ strong {
   margin-right: 10px;
 }
 .header-bottom {
-  height: 90px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,7 +276,6 @@ strong {
   object-fit: contain;
 }
 .main-content {
-  height: calc(100vh - 120px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,18 +285,20 @@ strong {
   padding: 0 15px;
   margin: auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 .main-content * {
   z-index: 2;
 }
 
 .main-content h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
-  margin-bottom: 25px;
+  line-height: 1.1;
+  margin-bottom: 15px;
 }
 .main-content__logo {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .main-content__logo img {
   display: block;
@@ -317,7 +321,7 @@ strong {
 }
 .btn-orange {
   background: #f59d24;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .btn-blue {
   background: #0078b3;
@@ -348,7 +352,7 @@ strong {
   padding: 20px 20px 30px 20px;
 }
 .subscribe h2 {
-  font-size: 34px;
+  font-size: 32px;
   color: #333333;
   margin-bottom: 10px;
 }
@@ -402,6 +406,8 @@ strong {
 .subscribe-qr img {
   display: flex;
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .subscribe-form {
   margin-top: auto;
@@ -472,6 +478,9 @@ strong {
 @media (max-width: 576px) {
   .page-wrapper {
     padding-bottom: 0;
+  }
+  .main-content {
+    margin: auto;
   }
   .subscribe {
     display: none;
